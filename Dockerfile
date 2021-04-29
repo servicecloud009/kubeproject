@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip den.zip
 RUN cp -rvf  den/* .
 RUN rm -rf den den.zip
-CMD ["/usr/sbin/httpd", "-D, "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
